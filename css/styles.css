@@ -168,6 +168,7 @@ background-position: center;
 background-size: cover;
 }
 
+
 .title {
 font-size: 56px;
 line-height: 1.07;
@@ -289,6 +290,10 @@ text-align: center;
 margin-bottom: 8px;
 }
 
+.icons {
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .icons-list-item {
 display: flex;
 justify-content: center;
@@ -307,7 +312,7 @@ background-color: #4d5ae5;
 }
 
 .icons_people {
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+/* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .icons:hover, 
@@ -372,11 +377,10 @@ transform: translateY(0%);
 .payments {
 position: relative;
 overflow: hidden;
-
 }
 
 .overlay {
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 position: absolute;
 top: 0;
 left: 0;
@@ -459,8 +463,16 @@ font-weight: 500;
 margin-right: 120px;
 }
 
-.icons_footer:hover {
+.icons_footer:hover,
+.icons_footer:focus {
 background-color: #31d0aa;
+}
+
+.icons-list-item-footer {
+display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 8px;
 }
 
 
