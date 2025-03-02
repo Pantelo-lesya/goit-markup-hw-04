@@ -304,10 +304,13 @@ width: 40px;
 height: 40px;
 border-radius: 50%;
 background-color: #4d5ae5;
+}
+
+.icons_people {
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icons:hover,
+.icons:hover, 
 .icons:focus {
 background-color: #404bbf;
 transition-delay: 250ms;
@@ -319,15 +322,12 @@ fill: #f4f4fd;
 
 .icons_footer:hover,
 .icons_footer:focus {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-background-color: #31d0aa;   
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.icons_people {}
-
 
 .headline-list {
 display: flex;
+gap: 24px; 
 }
 
 .description {
@@ -342,7 +342,6 @@ width: calc((100% - 3 * 24px) / 4);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-    gap: 24px;
 }
 
 /* section portfolio  */
@@ -367,7 +366,13 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .title_items_portfolio:hover .overlay {
 opacity: 1;
-transform: translateY(0);
+transform: translateY(0%);
+}
+
+.payments {
+position: relative;
+overflow: hidden;
+
 }
 
 .overlay {
@@ -454,8 +459,8 @@ font-weight: 500;
 margin-right: 120px;
 }
 
-.icons-list-item {
-gap: 16px;
+.icons_footer:hover {
+background-color: #31d0aa;
 }
 
 
